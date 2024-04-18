@@ -1,0 +1,1 @@
+INSERT INTO programa (codPrograma, codFacultad, nomPrograma, nomFacultad) VALUES ('10587','1','Ingenieria en sistemas', 'Ingenieria');
