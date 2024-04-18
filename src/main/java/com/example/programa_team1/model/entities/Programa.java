@@ -13,8 +13,9 @@ public class Programa {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 
-    private long codPrograma, codFacultad;
-    private String nomPrograma, nomFacultad;
+    private Long codprograma;
+    private String nomprograma;
+    private String nomfacultad;
 
 
 }
