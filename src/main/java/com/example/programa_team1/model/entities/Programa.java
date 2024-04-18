@@ -13,7 +13,7 @@ public class Programa {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 
-    private int codPrograma, codFacultad;
+    private long codPrograma, codFacultad;
     private String nomPrograma, nomFacultad;
 
 
