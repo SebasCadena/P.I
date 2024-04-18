@@ -9,8 +9,8 @@ public interface IProgramaService {
     List<Programa>findAll(); //Devuelve una lista con todos los programas
     Programa save(Programa programa);//Guarda un programa y retorna un objeto de tipo programa
 
-    Programa findById(Long codPrograma);
+    Programa findById(Long codPrograma); //Busca un programa por su codigo
 
-    Programa update(Programa programa);
+    Programa update(Programa programa);//Actualiza un programa
 
 }
