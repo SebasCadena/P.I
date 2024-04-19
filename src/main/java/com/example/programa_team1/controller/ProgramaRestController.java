@@ -32,4 +32,9 @@ public class ProgramaRestController {
         return this.programaService.save(programa);
     }
 
+    @GetMapping("/programas/{codprograma}")
+    public Programa buscarPrograma(@PathVariable Long codprograma){
+        return this.programaService.findById(codprograma);
+    }
+
 }

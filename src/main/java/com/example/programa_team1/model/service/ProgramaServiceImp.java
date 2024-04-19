@@ -30,5 +30,9 @@ public class ProgramaServiceImp implements IProgramaService {
         return programaDao.save(programa);
     }
 
+    @Override
+    public  Programa findById(Long codprograma){
+        return programaDao.findById(codprograma).orElse(null);
+    }
 
 }
