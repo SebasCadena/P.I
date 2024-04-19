@@ -25,5 +25,10 @@ public class ProgramaServiceImp implements IProgramaService {
         return programaDao.save(programa);
     }
 
+    @Override
+    public Programa update(Programa programa){
+        return programaDao.save(programa);
+    }
+
 
 }

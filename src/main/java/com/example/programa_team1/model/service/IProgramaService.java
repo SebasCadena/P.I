@@ -9,11 +9,13 @@ public interface IProgramaService {
 
     Programa save(Programa programa);//Guarda un programa y retorna un objeto de tipo programa
 
+    Programa update(Programa programa);//Actualiza un programa
+
   /*  void delete(Programa programa); //Elimina un programa de la base de datos
     //Devuelve una lista con todos los programas
 
     Programa findById(Long codPrograma); //Busca un programa por su codigo
 
-    Programa update(Programa programa);//Actualiza un programa
+
 */
 }
