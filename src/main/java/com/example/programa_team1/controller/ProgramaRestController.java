@@ -22,5 +22,10 @@ public class ProgramaRestController {
         return this.programaService.findAll();
     }
 
+    @GetMapping("/CreatePrograma")
+    public Programa createPrograma(@RequestBody Programa programa){
+        return this.programaService.save(programa);
+    }
+
 
 }

@@ -20,11 +20,10 @@ public class ProgramaServiceImp implements IProgramaService {
         return (List<Programa>)programaDao.findAll();
     }
 
-
-    /*
-    Cuando estén todos los metodos quitar el comentario de arriba para que reconozca
-    las implementaciones hechas en IProgramaService
-     */
+    @Override
+    public Programa save(Programa programa){
+        return programaDao.save(programa);
+    }
 
 
 }

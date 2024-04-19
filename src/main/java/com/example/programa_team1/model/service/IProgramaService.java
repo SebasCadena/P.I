@@ -6,9 +6,11 @@ import java.util.List;
 
 public interface IProgramaService {
     List<Programa>findAll();
-  /*  void delete(Programa programa); //Elimina un programa de la base de datos
-     //Devuelve una lista con todos los programas
+
     Programa save(Programa programa);//Guarda un programa y retorna un objeto de tipo programa
+
+  /*  void delete(Programa programa); //Elimina un programa de la base de datos
+    //Devuelve una lista con todos los programas
 
     Programa findById(Long codPrograma); //Busca un programa por su codigo
 
