@@ -12,10 +12,8 @@ public class Programa {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-
     private Long codprograma;
     private String nomprograma;
     private String nomfacultad;
-
-
 }
+
