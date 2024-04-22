@@ -31,8 +31,17 @@ public class ProgramaServiceImp implements IProgramaService {
     }
 
     @Override
-    public  Programa findById(Long codprograma){
-        return programaDao.findById(codprograma).orElse(null);
+    public Programa findById(Long codPrograma){
+        return programaDao.findById(codPrograma).orElse(null);
+    }
+
+    public void deleteById(Long codPrograma){
+        programaDao.deleteById(codPrograma);
+    }
+
+    @Override
+    public void delete(Programa programa){
+        programaDao.delete(programa);
     }
 
 }

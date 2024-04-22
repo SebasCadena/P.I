@@ -37,4 +37,14 @@ public class ProgramaRestController {
         return this.programaService.findById(codprograma);
     }
 
+    @DeleteMapping("/delete/{codPrograma}")
+    public void deleteById(@PathVariable Long codPrograma){
+        this.programaService.deleteById(codPrograma);
+    }
+
+    @DeleteMapping("/delete")
+    public void delete(@RequestBody Programa programa){
+        this.programaService.delete(programa);
+    }
+
 }

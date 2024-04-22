@@ -13,11 +13,7 @@ public interface IProgramaService {
 
     Programa findById(Long codPrograma); //Busca un programa por su codigo
 
-  /*  void delete(Programa programa); //Elimina un programa de la base de datos
-    //Devuelve una lista con todos los programas
+    void delete(Programa programa); //Elimina un programa de la base de datos
 
-
-
-
-*/
+    void deleteById (Long codPrograma); //Elimina un programa de la base de datos por id
 }
