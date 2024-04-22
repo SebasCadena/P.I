@@ -22,14 +22,14 @@ public class ProgramaRestController {
         return this.programaService.findAll();
     }
 
-    @PostMapping("/Create")
+    @PostMapping("/create")
     public Programa createPrograma(@RequestBody Programa programa){
         return this.programaService.save(programa);
     }
 
-    @PutMapping("/Update")
+    @PutMapping("/update")
     public Programa updatePrograma(@RequestBody Programa programa){
-        return this.programaService.save(programa);
+        return this.programaService.update(programa);
     }
 
     @GetMapping("/programas/{codprograma}")
