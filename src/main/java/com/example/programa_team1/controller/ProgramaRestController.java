@@ -53,6 +53,8 @@ public class ProgramaRestController {
         if (optionalPrograma.isPresent()) {
             Programa programa = optionalPrograma.get();
             programa.setNomprograma(detallesPrograma.getNomprograma());
+            programa.setCodfacultad(detallesPrograma.getCodfacultad());
+            programa.setCodigodocente(detallesPrograma.getCodigodocente());
 
             Programa programaActualizado = programaService.save(programa);
             return ResponseEntity.ok(programaActualizado);
