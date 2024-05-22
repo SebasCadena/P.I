@@ -52,7 +52,6 @@ public class ProgramaRestController {
         Optional<Programa> optionalPrograma = Optional.ofNullable(programaService.findById(codprograma));
         if (optionalPrograma.isPresent()) {
             Programa programa = optionalPrograma.get();
-            programa.setNomfacultad(detallesPrograma.getNomfacultad());
             programa.setNomprograma(detallesPrograma.getNomprograma());
 
             Programa programaActualizado = programaService.save(programa);
